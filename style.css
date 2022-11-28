@@ -1,0 +1,221 @@
+body {
+  background-color: #efe7e3; /* 전체 배경색 */
+}
+
+.frame {
+  margin: 30px 150px; /* 위아래 30px, 양옆 150px margin */
+  display: flex;
+  flex-direction: column; /* 아래쪽으로 쌓이는 모양 */
+}
+
+/* navigator */
+
+.navigator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li {
+  display: inline;
+  align-self: center;
+  margin: 0;
+  margin-left: 15px; /* work 랑 info 글자사이 띄워두기 */
+}
+
+ul {
+  margin: 0;
+}
+
+.site-name {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: #c2b4ab;
+}
+
+.nav-menu {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400; /* 폰트 얇게 */
+  font-size: 16px;
+}
+
+a {
+  color: black; /* work랑 info에 있는 하이퍼링크 디자인 없애기 */
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  transition: 0.3s; /* 마우스 올렸을때 하얀색으로 바뀌는데 속도감 느리게 조절*/
+}
+
+/* dashboard */
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.korean-comment {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.sample {
+  background-color: rgb(90, 178, 49);
+  -webkit-text-stroke: 1.5px black;
+}
+
+.sample:hover {
+  background-color: transparent;
+  color: white;
+  -webkit-text-stroke: 1.5px black; /* 텍스트 아웃라인 */
+  transition: none; /* 트랜지션 지연 효과 제거 */
+}
+
+.highlight {
+  color: white;
+  -webkit-text-stroke: 1.5px black;
+}
+
+.highlight:hover {
+  background-color: pink;
+  color: black;
+  transition: none;
+}
+
+.type1:hover {
+  background-color: rgb(237, 122, 122);
+  color: black;
+}
+
+.type2:hover {
+  background-color: rgb(241, 221, 92);
+  color: black;
+}
+
+.type3:hover {
+  background-color: rgb(90, 178, 49);
+  color: black;
+}
+
+.english-comment {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  font-style: italic;
+}
+
+/* recent works */
+
+.recent-menu {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #c2b4ab;
+
+  /*
+    display: inline;
+    align-self: flex-end; 
+    위치 오른족 끝으로 보내기 방법 1*/
+
+  text-align: right; /* 위치 끝으로 보내기 방법 2*/
+  margin-top: 100px;
+}
+
+/* footer */
+
+.work-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.contact {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  /*border-top: 1px solid;  라인넣기 */
+  margin-bottom: 30px;
+  border-bottom: 2px solid black;
+}
+
+.links > a {
+  font-family: "Montserrat", sans-serif; /* links 안에 있는 a에 적용*/
+}
+
+.links > a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+.work-footer > p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  font-style: italic;
+  margin: 0;
+  margin-top: 5px;
+}
+
+/* info section */
+
+/* profile-section */
+
+.profile-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin: 100px 100px;
+}
+
+#profile-picture {
+  width: 400px;
+  margin-right: 60px;
+}
+
+.introduction > h2 {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+}
+
+.introduction > p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+#interests {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 30px;
+}
+
+/* hobby */
+
+#p_1 {
+  width: 300px;
+  margin-right: 60px;
+}
+
+#p_2 {
+  width: 300px;
+  margin-right: 60px;
+}
+
+#p_3 {
+  width: 300px;
+  margin-right: 60px;
+}

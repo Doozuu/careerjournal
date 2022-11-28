@@ -1,0 +1,170 @@
+body {
+  background-color: #efe7e3; /* 전체 배경색 */
+}
+
+.frame {
+  margin: 30px 150px; /* 위아래 30px, 양옆 150px margin */
+  display: flex;
+  flex-direction: column; /* 아래쪽으로 쌓이는 모양 */
+}
+
+.box {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* navigator */
+
+.navigator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li {
+  display: inline;
+  align-self: center;
+  margin: 0;
+  margin-left: 15px; /* work 랑 info 글자사이 띄워두기 */
+}
+
+ul {
+  margin: 0;
+}
+
+.site-name {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: #c2b4ab;
+}
+
+.nav-menu {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400; /* 폰트 얇게 */
+  font-size: 16px;
+}
+
+a {
+  color: black; /* work랑 info에 있는 하이퍼링크 디자인 없애기 */
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  transition: 0.3s; /* 마우스 올렸을때 하얀색으로 바뀌는데 속도감 느리게 조절*/
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+h4 {
+  font-size: 22px;
+  line-height: 2;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.p {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.MyLife {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 100px;
+  margin-left: -100px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.MyLife__list {
+  display: inline-flex;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: left;
+  color: black;
+  margin: 56px 0 56px 0px;
+}
+.MyLife__list li {
+  font-size: 1.1em;
+  position: relative;
+  width: 200px;
+  height: 120px;
+}
+.MyLife__list li::before {
+  content: "";
+  position: relative;
+  z-index: 1;
+
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 4px solid black;
+  background-color: white;
+}
+
+.MyLife__list li span {
+  /* 글자 수에 관계없이 통일된 위치로 기울어지도록 */
+  display: inline-block;
+  width: 164px;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 84px;
+  left: -70px;
+  opacity: 0.5;
+  font-weight: 500;
+}
+.MyLife__list li:hover span {
+  opacity: 1;
+}
+
+.MyLife__progress {
+  position: absolute;
+  top: 70px;
+  left: 56px;
+  width: 1000px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.416);
+}
+
+.MyLife__progress::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  width: 0;
+  height: 8px;
+  transition: all 1s;
+}
+.MyLife__list li:hover::before {
+  background-color: salmon;
+}
+.MyLife__list li:nth-child(2):hover ~ .MyLife__progress::after {
+  width: 240px;
+}
+.MyLife__list li:nth-child(3):hover ~ .MyLife__progress::after {
+  width: 450px;
+}
+.MyLife__list li:nth-child(4):hover ~ .MyLife__progress::after {
+  width: 670px;
+}
+.MyLife__list li:nth-child(5):hover ~ .MyLife__progress::after {
+  width: 880px;
+}
